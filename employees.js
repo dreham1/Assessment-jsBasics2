@@ -20,8 +20,8 @@
 */
 
 //CODE HERE
-
-
+ class Employee 
+construc
 
 /*
     Create a new instance of your class.
