@@ -30,6 +30,7 @@
 */
 
 //CODE HERE
+class Ticket
 
 
 
