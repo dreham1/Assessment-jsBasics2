@@ -22,12 +22,31 @@
 */
 
 //CODE HERE
+// function sum(a,b){
+//     return a + b 
+// }NAMED FUNCTION WITH MULTIPLE PARAMS
+
+// function isPositive(number) {
+//     return number >= 0
+// }NAMED FUNCTION WITH SINGLE PARAM
+
+// function randomNumber(){
+//     return Math.random
+// }NAMED FUNCTION WITH NO PARAM
+
+// document.addEventListener('click', function(){
+//     console.log('click')
+// })ANON FUNCTION WITH NO NAME
+
+greetUser = () =>{
+    
+}
+console.log("Welcome back, user")
 
 
 
 
-
-//////////////////PROBLEM 2////////////////////
+////////////////PROBLEM 2////////////////////
 /* 
     Below is an array of zip codes that are in
     the restaurant's delivery zone. 
@@ -50,8 +69,11 @@
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
-
-
+function canWeDeliver()
+   
+    
+   
+   
 
 /* 
     Problem 2 Continued
