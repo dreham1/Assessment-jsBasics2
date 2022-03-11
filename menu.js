@@ -31,7 +31,13 @@
 */
 
 //CODE HERE
-function pizz 
+let pizza = {
+    name: "sausage",
+    price:13,
+    category:"entree",
+    popularity:9,
+    tag:["italian", "new-haven", "popular"]
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -43,7 +49,7 @@ function pizz
 */
 
 //CODE HERE
-
+console.log(pizza.popularity[0])
 
 /*
     Second, log the second tag in your pizza's
@@ -149,8 +155,19 @@ function pizz
 */
 
 //CODE HERE
+// const filterByProperty = (property, number, type) => {
+//     let filteredArr = []
+//     foodArr.filter(item =>{
+//         if(type === 'above') {
+//             return item[property] > number
+//         } else {
+//             return item[property] < number
+//         }
+//     })
+//     return filteredArr
+// }
 
-
+// console.log(filterByProperty('price',10, 'below'))
 /*
     Invoke the `filterByProperty` function passing
     in a value for each paramter.

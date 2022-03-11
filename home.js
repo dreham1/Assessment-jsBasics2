@@ -43,7 +43,8 @@ greetUser = () =>{
 }
 console.log("Welcome back, user")
 
-
+// const greetUser = username => `Welcome back, ${username}`
+// console.log(greetUser('DJ')) inline
 
 
 ////////////////PROBLEM 2////////////////////
@@ -69,11 +70,19 @@ console.log("Welcome back, user")
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
-function canWeDeliver()
+
+function canWeDeliver(zipCode){
+    for (let i = 0; i < deliveryAreaZipCodes.length; i++){
+        if(deliveryAreaZipCodes[i] === zipCode){
+            return console.log(`youre in our delivery zone`)
+        }
+    } return console.log(`sorry we cant deliver to that address`)
+}
+// canWeDeliver(85203)
+// canWeDeliver(74646)
+
    
     
-   
-   
 
 /* 
     Problem 2 Continued
@@ -93,8 +102,15 @@ function canWeDeliver()
 */
 
 // CODE HERE
-
-
+const canWeDeliver2 = (zipCode) => {
+    if(deliveryAreaZipCodes.includes(zipCode)) {
+        return console.log(`youre in our delivery zone`)
+    } else {
+        return console.log(`sorry we cant deliver to that address`)
+    }
+}
+// canWeDeliver(85203)
+// canWeDeliver(74746)
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
@@ -129,8 +145,9 @@ const deals = [
 */
 
 //CODE HERE
-
-
+deals[0].title = deals[0].title.replace('15', '10')
+    deals[0].title = "10% off"
+    // console.log(deals)
 
 /*
     The restaurant is going to continue its
@@ -146,3 +163,5 @@ const deals = [
 */
 
 //CODE HERE
+deals[1].desc = deals[1].desc.replace('March','April').trim()
+// console.log(deals)
